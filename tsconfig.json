@@ -2,12 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "@sumitranjan52/preloader": [
-        "dist/sumitranjan52/preloader/sumitranjan52-preloader",
-        "dist/sumitranjan52/preloader"
-      ]
-    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -17,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-preloader": [
+        "dist/ngx-preloader/ngx-preloader",
+        "dist/ngx-preloader"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

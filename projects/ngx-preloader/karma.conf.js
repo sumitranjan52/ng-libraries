@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../../coverage/sumitranjan52/preloader'),
+      dir: require('path').join(__dirname, '../../coverage/ngx-preloader'),
       subdir: '.',
       reporters: [
         { type: 'html' },

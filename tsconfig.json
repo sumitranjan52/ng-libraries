@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@sumitranjan52/preloader": [
+        "dist/sumitranjan52/preloader/sumitranjan52-preloader",
+        "dist/sumitranjan52/preloader"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

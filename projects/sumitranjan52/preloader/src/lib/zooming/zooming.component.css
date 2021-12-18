@@ -1,0 +1,48 @@
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--min-width, 50px);
+  height: var(--min-width, 50px);
+  border: 10px solid var(--border-color, #764237);
+  border-radius: 50%;
+  animation: zoom 1s linear infinite alternate-reverse;
+}
+
+@keyframes zoom {
+  0% {
+    width: var(--min-width, 50px);
+    height: var(--min-width, 50px);
+    border-color: var(--border-color, #764237);
+    opacity: 1;
+  }
+
+  25% {
+    width: var(--min-width1, 70px);
+    height: var(--min-width1, 70px);
+    border-color: var(--border-color, #764237);
+    opacity: 0.8;
+  }
+
+  50% {
+    width: var(--min-width2, 90px);
+    height: var(--min-width2, 90px);
+    border-color: var(--border-color, #764237);
+    opacity: 0.6;
+  }
+
+  75% {
+    width: var(--min-width3, 110px);
+    height: var(--min-width3, 110px);
+    border-color: var(--border-color, #764237);
+    opacity: 0.5;
+  }
+
+  100% {
+    width: var(--max-width, 130px);
+    height: var(--max-width, 130px);
+    border-color: var(--border-color, #764237);
+    opacity: 0.4;
+  }
+}

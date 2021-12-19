@@ -1,0 +1,80 @@
+.spinner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: var(--min-width, 100px);
+  width: var(--min-width, 100px);
+  border: 2px solid #555;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 50%;
+  animation: rotate360 2s infinite ease-in-out;
+}
+
+.spinner span:nth-child(1) {
+  height: var(--min-width, 50px);
+  width: var(--min-width, 50px);
+  border-left: 2px solid var(--border-color1, #fc7670);
+  border-right: 2px solid var(--border-color1, #fc7670);
+  animation-delay: 0.8s;
+}
+
+.spinner span:nth-child(2) {
+  height: var(--min-width1, 70px);
+  width: var(--min-width1, 70px);
+  border-left: 2px solid var(--border-color2, #ebd793);
+  border-right: 2px solid var(--border-color2, #ebd793);
+  animation-delay: 0.6s;
+  animation-direction: reverse;
+}
+
+.spinner span:nth-child(3) {
+  height: var(--min-width2, 90px);
+  width: var(--min-width2, 90px);
+  border-left: 2px solid var(--border-color3, #6ed1b7);
+  border-right: 2px solid var(--border-color3, #6ed1b7);
+  animation-delay: 0.4s;
+}
+
+.spinner span:nth-child(4) {
+  height: var(--min-width3, 110px);
+  width: var(--min-width3, 110px);
+  border-left: 2px solid var(--border-color4, #38a484);
+  border-right: 2px solid var(--border-color4, #38a484);
+  animation-delay: 0.2s;
+  animation-direction: reverse;
+}
+
+.spinner span:nth-child(5) {
+  height: var(--max-width, 130px);
+  width: var(--max-width, 130px);
+  border-left: 2px solid var(--border-color5, #365050);
+  border-right: 2px solid var(--border-color5, #365050);
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}

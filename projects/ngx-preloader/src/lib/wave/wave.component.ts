@@ -1,14 +1,16 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'ben10',
-  template: `<div #loading class="loader"></div>`,
-  styleUrls: ['./ben10.component.css'],
+  selector: 'wave',
+  template: `<div #loading class="preloader-container">
+    <span class="animated-preloader"></span>
+  </div>`,
+  styleUrls: ['./wave.component.css'],
 })
-export class Ben10Component implements OnInit {
-  @Input('color') color: string = '000000';
+export class WaveComponent implements OnInit {
+  @Input('color') color: string = 'f35353';
   @Input('color2') color2: string = 'ffffff';
-  @Input('width') width: number = 60;
+  @Input('width') width: number = 100;
 
   _width: string = this.width + 'px';
 
@@ -20,12 +22,9 @@ export class Ben10Component implements OnInit {
 
   ngAfterViewInit() {
     console.log(this.loading);
+    this.loading?.nativeElement.style.setProperty('--color', '#' + this.color);
     this.loading?.nativeElement.style.setProperty(
-      '--border-color',
-      '#' + this.color
-    );
-    this.loading?.nativeElement.style.setProperty(
-      '--border-color1',
+      '--color1',
       '#' + this.color2
     );
     this.loading?.nativeElement.style.setProperty('--min-width', this._width);

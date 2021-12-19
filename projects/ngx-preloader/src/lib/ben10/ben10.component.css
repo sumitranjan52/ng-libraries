@@ -1,0 +1,40 @@
+.loader {
+  border: var(--min-width, 60px) solid var(--border-color, #000000);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: var(--min-width, 60px) solid transparent;
+  border-bottom: var(--min-width, 60px) solid transparent;
+  border-radius: 50%;
+  animation: rotateAndSpilt 2s infinite ease-in-out;
+}
+
+@keyframes rotateAndSpilt {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 0;
+    border-top: var(--min-width, 60px) solid transparent;
+    border-bottom: var(--min-width, 60px) solid transparent;
+    border-left: var(--min-width, 60px) solid var(--border-color, #000000);
+    border-right: var(--min-width, 60px) solid var(--border-color, #000000);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+    width: 0;
+    border-top: var(--min-width, 60px) solid var(--border-color1, #ffffff);
+    border-bottom: var(--min-width, 60px) solid var(--border-color1, #ffffff);
+    border-left: var(--min-width, 60px) solid transparent;
+    border-right: var(--min-width, 60px) solid transparent;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    width: 0;
+    border-top: var(--min-width, 60px) solid transparent;
+    border-bottom: var(--min-width, 60px) solid transparent;
+    border-left: var(--min-width, 60px) solid var(--border-color, #000000);
+    border-right: var(--min-width, 60px) solid var(--border-color, #000000);
+  }
+}

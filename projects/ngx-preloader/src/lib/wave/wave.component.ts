@@ -27,6 +27,6 @@ export class WaveComponent implements OnInit {
       '--color1',
       '#' + this.color2
     );
-    this.loading?.nativeElement.style.setProperty('--min-width', this._width);
+    this.loading?.nativeElement.style.setProperty('--width', this._width);
   }
 }

@@ -14,7 +14,7 @@ export class BouncyCircleComponent implements OnInit {
   private _colors: Array<string> = ['457B9D', 'E63946', 'DAD7CD', '392F5A'];
 
   @Input('colors') set colors(colors: Array<string>) {
-    if (colors?.length !== 4) return;
+    if (colors?.length !== 4) throw 'colors length should be 4';
     this._colors = colors;
   }
   @Input('width') width: number = 100;

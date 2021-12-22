@@ -1,6 +1,14 @@
 {
   "name": "sumitranjan52-libraries",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Collection of Angular Libraries",
+  "homepage": "https://github.com/sumitranjan52/ng-libraries",
+  "bugs": "https://github.com/sumitranjan52/ng-libraries/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumitranjan52/ng-libraries.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

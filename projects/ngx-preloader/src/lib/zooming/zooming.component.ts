@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'zooming-preload',
+  selector: 'zooming',
   template: `<div #loading class="loading"></div>`,
   styleUrls: ['./zooming.component.css'],
 })

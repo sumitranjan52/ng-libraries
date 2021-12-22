@@ -1,23 +1,13 @@
-# Sumit Ranjan's Angular Libraries
+# Angular Libraries
 
-This is an umberlla of Angular Libraries
+This is an umberlla of Angular Libraries. Each library will have it's own documentation.
 
-- Preloaders - generally used while loading pages or making server request.
+- Preloaders (projects/ngx-preloader) [npm] - Generally used while loading pages or making server request. It is collection of preloaders sourced from MIT licensed author from [Codepen][codepen] and modified them to make them reusable and work on [Angular][angular] framework.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+## License
 
-## Development build
+- MIT License
 
-Run `ng build @sumitranjan52/preloader --configuration development` for a generating dev build.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build @sumitranjan52/preloader` to build the project. The build artifacts will be stored in the `dist/@sumitranjan52/preloader` directory.
-
-## Further help
-
-To get more help on the Creating Angular libraries check out the [Creating libraries Reference](https://angular.io/guide/creating-libraries) page.
+[npm]: https://www.npmjs.com/package/ngx-preloader
+[codepen]: https://www.codepen.io
+[angular]: https://angular.io
